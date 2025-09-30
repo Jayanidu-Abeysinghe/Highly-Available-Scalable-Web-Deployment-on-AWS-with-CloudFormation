@@ -92,8 +92,10 @@ Fill in the parameters:
   - SSHLocation → your IP (recommended) or 0.0.0.0/0 (open to all)
   - Subnets → select at least two public subnets (hold CTRL/CMD to pick multiple)
   - VPC → choose your VPC ID
-    
+  
 Click Next.
+
+<img src="https://github.com/Jayanidu-Abeysinghe/Highly-Available-Scalable-Web-Deployment-on-AWS-with-CloudFormation/raw/main/images/cf7.png" width="600" alt="SNS Config">
 
 **5. Configure Stack Options**
 
