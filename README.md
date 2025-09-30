@@ -170,6 +170,8 @@ Click Next.
   - Sends notifications via email whenever scaling events occur (instance launched, terminated, failed health check, etc.).
   - Keeps operators aware of infrastructure changes.
 
+![SNS Config](Images/cf6.png)
+
 **📤 Outputs**
 - Provides easy-to-copy values after stack creation:
   - ALB DNS Name → the URL of your deployed app.
