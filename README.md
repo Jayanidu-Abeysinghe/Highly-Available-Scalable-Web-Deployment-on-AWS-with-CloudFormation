@@ -115,6 +115,8 @@ Click Next.
 - Watch progress in the Events tab.
 - Once complete, status will show: CREATE_COMPLETE.
 
+<img src="https://github.com/Jayanidu-Abeysinghe/Highly-Available-Scalable-Web-Deployment-on-AWS-with-CloudFormation/raw/main/images/cf01.png" width="600" alt="SNS Config">
+
 **8. Get the Load Balancer DNS**
 - Open the stack → Outputs tab.
 - Copy the value of ALBDNSName.
@@ -127,6 +129,8 @@ Click Next.
 - Open the DNS in a browser: ``http://my-web-app-alb-1234567890.us-east-1.elb.amazonaws.com``
  
 ✅ You should now see your own customized website.
+
+<img src="https://github.com/Jayanidu-Abeysinghe/Highly-Available-Scalable-Web-Deployment-on-AWS-with-CloudFormation/raw/main/images/cf5.png" width="600" alt="SNS Config">
 
 (This stack uses a custom AMI baked with the web application, and that AMI ID is referenced in the Launch Template. Instead of the default Apache “Hello World” page, your pre-baked site is served immediately after deployment.)
 
@@ -161,16 +165,20 @@ Click Next.
   - Serves a sample Hello World page (or your app).
 - Provides a consistent baseline for all Auto Scaling instances.
 
+<img src="https://github.com/Jayanidu-Abeysinghe/Highly-Available-Scalable-Web-Deployment-on-AWS-with-CloudFormation/raw/main/images/cf4.png" width="600" alt="SNS Config">
+
 **⚖️ Auto Scaling Group (ASG)**
   - Ensures that a minimum of 1 instance is always running and can scale up to 3 instances if demand increases.
   - Automatically replaces unhealthy instances.
   - Spreads instances across multiple subnets / Availability Zones → fault tolerance.
 
+<img src="https://github.com/Jayanidu-Abeysinghe/Highly-Available-Scalable-Web-Deployment-on-AWS-with-CloudFormation/raw/main/images/cf3.png" width="600" alt="SNS Config">
+
 **📢 SNS Topic**
   - Sends notifications via email whenever scaling events occur (instance launched, terminated, failed health check, etc.).
   - Keeps operators aware of infrastructure changes.
 
-![SNS Config](Images/cf6.png)
+<img src="https://github.com/Jayanidu-Abeysinghe/Highly-Available-Scalable-Web-Deployment-on-AWS-with-CloudFormation/raw/main/images/cf6.png" width="600" alt="SNS Config">
 
 **📤 Outputs**
 - Provides easy-to-copy values after stack creation:
